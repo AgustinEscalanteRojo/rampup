@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="portfolio.html">Instalaciones</a></li>
+          <li><a href="biografia.html">Biografía</a></li>
+        </ul>
+    </nav>
+  </header> 
+
+    <h1><ins>Contacto paciente</ins></h1>
+        <div>
+          <label for="nombreusuario">Nombre</label> 
+          <input type="text" name="nombreusuario" id="nombreusuario" />
+        </div>
+        
+        <div>
+          <label for="apellidousuario">Apellidos</label>
+          <input type="text" name="apellidousuario" id="apellidousuario" />
+        </div>
+        
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0" max="99" step="1" />
+          </div>
+
+        <div>
+            <h3><strong><ins>Sexo</ins></strong></h3>
+            <input type="radio" id="Hombre" name="sexo">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="Mujer" name="sexo">
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" id="Otros" name="sexo">
+            <label for="Otros">Otros</label><br>
+        </div>
+
+        <h3><strong><ins>Contacto</ins></strong></h3>
+
+        <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+            <label for="tel">Teléfono</label>
+            <input type="tel" name="tel" id="tel" />
+        </div>
+
+        <h3><ins>Disponibilidad para consulta</ins></h3>
+
+        <div>
+            <label for="daytime">Día y hora:</label>
+            <input type="datetime-local" id="daytime" name="daytime">
+        </div>
+
+        <h3><ins>Háblame de ti</ins></h3>
+
+        <div>
+            <label for="comentarios">Describe brevemente como te sientes:</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </div>
+        
+        <div>
+            <label for="sensación">¿Qué sensación tienes para haber dado este paso?</label>
+            <select name="sensación" id="sensación">
+                <option value="sueño">Problemas para conciliar el sueño</option>
+                <option value="agresivo">Me siento agresivo</option>
+                <option value="emociones">No controlo las emociones</option>
+                <option value="Lloro">Lloro con facilidad</option>
+                <option value="negativos">Pensamientos negativos</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <br><br>
+        </div>
+            
+        <div>
+            <label for="browser">¿Qué te ha motivado para solicitar una consulta?</label>
+            <input list="browser" name="browser" id="marca">
+            <datalist id="browser">
+              <option value="Necesito ayuda">
+              <option value="Quiero ser capaz de relacionarme con la gente">   
+              <option value="Otros">           
+            </datalist>
+        </div>
+
+        <input type="submit">
+
+        <p><em><strong>Psicóloga colegiada nºAN09932
+          &reg;Psiqui&co</em></p></strong>
+        
+        </form>
+</body>
+</html>
