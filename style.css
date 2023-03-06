@@ -1,5 +1,6 @@
 body {
     background-image: url("Fondo.jpg");
+    background-size: cover;
     color: blanchedalmond;
     padding: 2rem;
     text-align: center;
@@ -14,11 +15,6 @@ h2 {
     color:beige;
 }
 
-em {
-    text-align: center;
-    color: rgb(104, 4, 46);
-}
-
 .menu {
     border: 6px solid rgb(104, 4, 46);
     background-color: #f3f2ed;
@@ -29,6 +25,10 @@ em {
     display:inline-flex;
     margin:auto;
     color: rgb(104, 4, 46);
+}
+
+.menu ul {
+    padding: 0;
 }
 
 .logo {
@@ -53,12 +53,14 @@ a:hover {
     margin-left: 125px;
     margin-right: 125px;
     font-size: 1.2em;
-    }
+    text-align: justify;
+}
 
 .yo {
     margin-left: 125px;
     margin-right: 125px;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    text-align: justify;
 }
 
 .María {
@@ -143,6 +145,14 @@ a:hover {
 
 .contenedor-imagenes > img {
     object-fit: cover;
+}
+
+.footer {
+    text-align: center;
+}
+
+footer em {
+    color: rgb(104, 4, 46);
 }
 
 @media screen and (max-width: 480px) {
